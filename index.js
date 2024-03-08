@@ -6,12 +6,11 @@ const app = express();
 // middlewares
 app.use(express.json());
 
-// routes
+// middlewear-routes
 app.use('/weather', weatherRouter)
 
 
-
 const port = 8080;
-app.listen(port, ()=>{
+app.listen(port, () => {
     console.log("Listining to port number 8080...")
 })
